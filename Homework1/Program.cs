@@ -4,22 +4,22 @@
 // a = 2 b = 10 -> max = 10
 // a = -9 b = -3 -> max = -3
 
-Console.WriteLine("Enter first number: ");
-int num1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Enter second number: ");
-int num2 = Convert.ToInt32(Console.ReadLine());
-if(num1 == num2)
-Console.WriteLine("These are the same! Try again!");
-   else if(num1 > num2)
-    {
-        Console.WriteLine("Max =" + num1);
-        Console.WriteLine("Min =" + num2);
-    }
-    else
-    {
-        Console.WriteLine("Max =" + num2);
-        Console.WriteLine("Min =" + num1);  
-    }
+// Console.WriteLine("Enter first number: ");
+// int num1 = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Enter second number: ");
+// int num2 = Convert.ToInt32(Console.ReadLine());
+// if(num1 == num2)
+// Console.WriteLine("These are the same! Try again!");
+//    else if(num1 > num2)
+//     {
+//         Console.WriteLine("Max =" + num1);
+//         Console.WriteLine("Min =" + num2);
+//     }
+//     else
+//     {
+//         Console.WriteLine("Max =" + num2);
+//         Console.WriteLine("Min =" + num1);  
+//     }
 
 // Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
 
