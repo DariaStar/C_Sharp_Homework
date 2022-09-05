@@ -39,6 +39,14 @@
 
 // 32679 -> 6
 
+// Console.WriteLine("Enter number: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+
+// if(100 > num)
+//      Console.WriteLine("There is no third digit");
+// else
+// Console.Write(Convert.ToString(num)[2]);
+
 // Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
 
 // 6 -> да
