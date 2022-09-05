@@ -4,20 +4,32 @@
 // 782 -> 8
 // 918 -> 1
 
-Console.WriteLine("Enter 3-digit number: ");
-int num = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Enter 3-digit number: ");
+// int num = Convert.ToInt32(Console.ReadLine());
 
-void secondDigit()
-{
-    int n1 = num / 10;
-    int n2 = n1 % 10;
+// void secondDigit()
+// {
+//     int n1 = num / 10;
+//     int n2 = n1 % 10;
     
-    Console.WriteLine("Middle digit is " + n2);
-}
-if(100 > num || num > 999)
-    Console.WriteLine("It's not 3-digit number. Try again!");
-else
-secondDigit();
+//     Console.WriteLine("Middle digit is " + n2);
+// }
+// if(100 > num || num > 999)
+//     Console.WriteLine("It's not 3-digit number. Try again!");
+// else
+// secondDigit();
+
+//или
+
+// Console.WriteLine("Enter 3-digit number: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+
+// if(100 > num || num > 999)
+//     Console.WriteLine("It's not 3-digit number. Try again!");
+// else
+// Console.Write(Convert.ToString(num)[1]);
+
+
 
 // Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 
