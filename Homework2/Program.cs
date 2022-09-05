@@ -52,3 +52,22 @@
 // 6 -> да
 // 7 -> да
 // 1 -> нет
+
+// Console.WriteLine("Enter number from 1 to 7: ");
+// int day = Convert.ToInt32(Console.ReadLine());
+
+// void WeekDays()
+// {
+// if(day == 6 || day == 7)
+// Console.WriteLine("It's weekend, yay!");
+// else
+// Console.WriteLine("It's not weekend, go to work");
+// }
+// if ( day > 7)
+// Console.WriteLine("Wrong! Try again!");
+// else
+// WeekDays();
+
+//Дополнительная задача. Задана последовательность натуральных чисел, завершающаяся числом 0. 
+//Требуется определить значение второго по величине элемента в этой последовательности, то есть элемента, 
+//который будет наибольшим, если из последовательности удалить наибольший элемент.
