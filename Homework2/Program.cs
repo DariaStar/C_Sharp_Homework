@@ -74,9 +74,10 @@
 //Входной файл INPUT.TXT содержит последовательность неотрицательных целых чисел, не превышающих значения 100. 
 //Гарантируется, что во входных данных не более 100 чисел и среди них есть хотя бы одно число 0, перед которым идет как минимум 2 элемента.
 
-int[] array = { 1, 2, 3, 4, 5, 6, 7, 0, 8, 9, 0 };
-int max1 = array[0];
-int max2 = array[1];
+int[] array = { 13, 27, 31, 43, 51, 6, 78, 0, 8, 89, 0 };
+int max1 = 0;
+int max2 = 0;
+int max = 0;
 int i = 0;
 int j = 0;
 
@@ -96,10 +97,13 @@ void MaxNumber2()
 for(j = 0; j < array.Length; j++)  
 {
   if (array[j] == 0) break;
-  else if (max2 < array[j] && max1 > max2) 
-  max2 = array[j];
+  else if (max < array[j]) 
+  max = array[j];
+  if (max1 > max)
+  max2 = max;
 }
  Console.WriteLine("Second maximum " + max2);
 }
 MaxNumber1();
 MaxNumber2();
+
