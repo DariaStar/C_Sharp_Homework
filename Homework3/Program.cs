@@ -68,26 +68,26 @@
 // то есть наибольшее количество последовательных дней, на протяжении которых среднесуточная температура превышала 0 градусов. 
 // Если температура в каждый из дней была неположительной, выведите 0.
  
-Console.WriteLine("Enter how many days ");
-int days = Convert.ToInt32(Console.ReadLine());
-int i = 0;
-int count = 0;
-int count_max = 0;
+// Console.WriteLine("Enter how many days ");
+// int days = Convert.ToInt32(Console.ReadLine());
+// int i = 0;
+// int count = 0;
+// int count_max = 0;
 
-for (i = 1; i < days + 1; i++)
-{
-Random rnd = new Random(); 
-int temp = rnd.Next(-50, 50); 
-Console.Write(temp + " "); 
+// for (i = 1; i < days + 1; i++)
+// {
+// Random rnd = new Random(); 
+// int temp = rnd.Next(-50, 50); 
+// Console.Write(temp + " "); 
 
-if (temp > 0) 
-    count++; 
-    count_max = count;
-else
-    count = 0;
-}
+// if (temp > 0) 
+// {
+//     count++; 
+//     if(count_max < count)
+//         count_max = count;
+// }
+// else
+//     count = 0;
+// }
 
-if(count_max < 1)
-Console.WriteLine("Total: 0");
-else
-Console.WriteLine("Total: " + count_max);
+// Console.WriteLine("Total: " + count_max);
