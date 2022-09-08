@@ -6,13 +6,20 @@
 
 
 Console.WriteLine("Enter 5-digit number ");
-    int num = Convert.ToInt32(Console.ReadLine());
+int num = Convert.ToInt32(Console.ReadLine());
+int i0 = num / 10000;
+Console.Write(i0 + " ");
+int i1 = (num / 1000) % 10;
+Console.Write(i1 + " ");
+int i3 = (num / 10) % 10;
+Console.Write(i3 + " ");
+int i4 = num % 10;
+Console.Write(i4 + " ");
 
-while (1000 > num || num > 99999)
-        Console.WriteLine("Wroooong, do it again!");
+if (num < 10000 || num > 99999)
+Console.WriteLine("It's not 5-digit! Do it again!");
 
-if (Convert.ToString(num)[0] == Convert.ToString(num)[4] && Convert.ToString(num)[1] == Convert.ToString(num)[3]);
+else if (i0 == i4 && i1 == i3)
     Console.WriteLine("It is a palindrome");
-
 else
     Console.WriteLine("No, it's not a palindrome");
