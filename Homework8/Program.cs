@@ -9,7 +9,55 @@
 // 9 5 3 2
 // 8 4 4 2
 
+// int[,] matrix = new int[4, 4];
 
+// void InputMatrix(int[,] matrix)
+// {
+//     for (int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); j++)
+//         matrix[i, j] = new Random().Next(1, 10);
+//     }
+// }
+
+// void PrintMatrix(int[,] matrix)
+// {
+//     Console.WriteLine();
+//     for (int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); j++)
+//         Console.Write(matrix[i, j] + " \t");
+//         Console.WriteLine();
+//     }
+// }
+
+// int[,] OrderMatrix (int[,] matrix)
+// {
+//     for (int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matrix.GetLength(1) - 1; j++)
+//         {
+//             int maxEl = matrix[i, j];
+//             int maxJ = j;
+//             for (int k = j + 1; k < matrix.GetLength(1); k++)
+//             {
+//                 if (matrix[i, k] > maxEl)
+//                 {
+//                     maxEl = matrix[i, k];
+//                     maxJ = k;
+//                 }
+//             }
+//             int aux = matrix[i, j];
+//             matrix[i, j] = matrix[i, maxJ];
+//             matrix[i, maxJ] = aux;
+//         }
+//     }
+//     return matrix;
+// }
+
+// InputMatrix(matrix);
+// PrintMatrix(matrix);
+// PrintMatrix(OrderMatrix(matrix));
 
 // Задача 56: Задайте прямоугольный двумерный массив. Напишите программу, которая будет находить строку 
 //с наименьшей суммой элементов.
@@ -101,7 +149,7 @@
 // SumMatrix(matrix1, matrix2);
 // PrintMatrix(matrix3);
 
-// Задача 60. ...Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. Напишите программу, 
+// Задача 60. Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. Напишите программу, 
 // которая будет построчно выводить массив, добавляя индексы каждого элемента.
 // Массив размером 2 x 2 x 2
 
