@@ -14,66 +14,92 @@
 // Задача 56: Задайте прямоугольный двумерный массив. Напишите программу, которая будет находить строку 
 //с наименьшей суммой элементов.
 
-// Например, задан массив:
+// int[,] matrix = new int[4, 4];
+// int sum = 0;
+// int minSum = 1000;
 
-// 1 4 7 2
+// void InputMatrix(int[,] matrix)
+// {
+//     for (int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); j++)
+//         matrix[i, j] = new Random().Next(1, 10);
+//     }
+// }
 
-// 5 9 2 3
+// void PrintMatrix(int[,] matrix)
+// {
+//     Console.WriteLine();
+//     for (int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); j++)
+//         Console.Write(matrix[i, j] + " \t");
+//         Console.WriteLine();
+//     }
+// }
 
-// 8 4 2 4
+// void Sum(int[,] matrix)
+// {
+//     for(int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         sum = 0;
+//         for(int j = 0; j < matrix.GetLength(1); j++)
+//             sum += matrix[i, j];    
+//     Console.WriteLine($"Sum of the {i} line is " + sum);
+//     if(sum < minSum)
+//     minSum = sum;
+//     }
+// Console.WriteLine("Min sum is " + minSum);
+// }
 
-// 5 2 6 7
 
-// Программа считает сумму элементов в каждой строке и выдаёт номер строки с наименьшей суммой элементов: 1 строка
+// InputMatrix(matrix);
+// PrintMatrix(matrix);
+// Sum(matrix);
+
 
 // Задача 58: Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
-// Например, даны 2 матрицы:
-// 2 4 | 3 4
-// 3 2 | 3 3
-// Результирующая матрица будет:
-// 18 20
-// 15 18
 
-int[,] matrix1 = new int [2, 2];
-int[,] matrix2 = new int [2, 2];
-int[,] matrix3 = new int [2, 2];
+// int[,] matrix1 = new int [2, 2];
+// int[,] matrix2 = new int [2, 2];
+// int[,] matrix3 = new int [2, 2];
 
-void InputMatrix(int[,] matrix1)
-{
-    for (int i = 0; i < matrix1.GetLength(0); i++)
-    {
-        for (int j = 0; j < matrix1.GetLength(1); j++)
-        matrix1[i, j] = new Random().Next(1, 10);
-    }
-}
+// void InputMatrix(int[,] matrix1)
+// {
+//     for (int i = 0; i < matrix1.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matrix1.GetLength(1); j++)
+//         matrix1[i, j] = new Random().Next(1, 10);
+//     }
+// }
 
-void PrintMatrix(int[,] matrix1)
-{
-    Console.WriteLine();
-    for (int i = 0; i < matrix1.GetLength(0); i++)
-    {
-        for (int j = 0; j < matrix1.GetLength(1); j++)
-        Console.Write(matrix1[i, j] + " \t");
-        Console.WriteLine();
-    }
-}
+// void PrintMatrix(int[,] matrix1)
+// {
+//     Console.WriteLine();
+//     for (int i = 0; i < matrix1.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matrix1.GetLength(1); j++)
+//         Console.Write(matrix1[i, j] + " \t");
+//         Console.WriteLine();
+//     }
+// }
 
-void SumMatrix(int[,] matrix1, int[,] matrix2)
-{
- for (int i = 0; i < matrix1.GetLength(0); i++)
-    {
-        for (int j = 0; j < matrix1.GetLength(1); j++)
-        matrix3[i, j] = matrix1[i, j] + matrix2[i, j];
+// void SumMatrix(int[,] matrix1, int[,] matrix2)
+// {
+//  for (int i = 0; i < matrix1.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matrix1.GetLength(1); j++)
+//         matrix3[i, j] = matrix1[i, j] + matrix2[i, j];
         
-    }   
-}
+//     }   
+// }
 
-InputMatrix(matrix1);
-PrintMatrix(matrix1);
-InputMatrix(matrix2);
-PrintMatrix(matrix2);
-SumMatrix(matrix1, matrix2);
-PrintMatrix(matrix3);
+// InputMatrix(matrix1);
+// PrintMatrix(matrix1);
+// InputMatrix(matrix2);
+// PrintMatrix(matrix2);
+// SumMatrix(matrix1, matrix2);
+// PrintMatrix(matrix3);
 
 // Задача 60. ...Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. Напишите программу, 
 // которая будет построчно выводить массив, добавляя индексы каждого элемента.
