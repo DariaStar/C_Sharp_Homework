@@ -1,13 +1,5 @@
 ﻿// Задача 54: Задайте двумерный массив. Напишите программу, которая упорядочит по убыванию элементы 
 //каждой строки двумерного массива.
-// Например, задан массив:
-// 1 4 7 2
-// 5 9 2 3
-// 8 4 2 4
-// В итоге получается вот такой массив:
-// 7 4 2 1
-// 9 5 3 2
-// 8 4 4 2
 
 // int[,] matrix = new int[4, 4];
 
@@ -39,14 +31,14 @@
 //         {
 //             int maxEl = matrix[i, j];
 //             int maxJ = j;
-//             for (int k = j + 1; k < matrix.GetLength(1); k++)
-//             {
-//                 if (matrix[i, k] > maxEl)
-//                 {
-//                     maxEl = matrix[i, k];
-//                     maxJ = k;
-//                 }
-//             }
+//                  for (int k = j + 1; k < matrix.GetLength(1); k++)
+//                  {
+//                      if (matrix[i, k] > maxEl)
+//                      {
+//                          maxEl = matrix[i, k];
+//                          maxJ = k;
+//                      }
+//                  }
 //             int aux = matrix[i, j];
 //             matrix[i, j] = matrix[i, maxJ];
 //             matrix[i, maxJ] = aux;
@@ -183,9 +175,44 @@
 // InputMatrix(matrix);
 // PrintMatrix(matrix);
 
-// Задача 62. Напишите программу, которая заполнит спирально массив 4 на 4.
+// Задача 62. НЕ ПОЛУЧИЛАСЬ. Напишите программу, которая заполнит спирально массив 4 на 4.
 // Например, на выходе получается вот такой массив:
-// 01 02 03 04
-// 12 13 14 05
-// 11 16 15 06
-// 10 09 08 07
+
+//НЕ ПОЛУЧИЛАСЬ
+
+// int[,] matrix = new int[4, 4];
+// int k = 0;
+// int r = 0;
+// int c = 0;
+
+// int[,] Spiral(int[,] matrix)
+// {
+// for (c = 0; c < matrix.GetLength(1); c++)
+//      matrix[r, c] = k++;
+        
+// for (r = 1; r < matrix.GetLength(0); r++)
+// {
+//     c = 0;
+//     matrix[r, c] = k++;
+// }
+
+// for (c = matrix.GetLength(1) - 1; c == 0; c--)
+// {
+//     r = 0;
+//     matrix[r, c] = k++;
+// }
+// }
+
+// void PrintMatrix(int[,] matrix)
+// {
+//     Console.WriteLine();
+//     for (int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); j++)
+//         Console.Write(matrix[r, c] + " \t");
+//         Console.WriteLine();
+
+//     }
+// }
+// Spiral(matrix);
+// PrintMatrix(matrix);
